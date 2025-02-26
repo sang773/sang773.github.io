@@ -3,38 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sangit Gaire | Portfolio</title>
+    <title>Sangit Gaire | Data Scientist Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Sangit Gaire</h1>
-        <nav>
-            <ul>
+    <!-- Hero Section with Background Animation -->
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo">Sangit Gaire</div>
+            <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
         </nav>
+        <div class="hero-content">
+            <h1>Hello, I’m Sangit Gaire</h1>
+            <p class="subtitle">Data Scientist | Problem Solver | Innovator</p>
+            <a href="#projects" class="cta-button">Explore My Work</a>
+        </div>
+        <div class="hero-bg"></div>
     </header>
 
-    <section id="about">
+    <!-- About Section with Image -->
+    <section id="about" class="section">
         <h2>About Me</h2>
-        <p>Welcome to my portfolio! I'm a passionate Data Scientist.</p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project Name</h3>
-            <p>Brief description of the project.</p>
+        <div class="about-container">
+            <div class="about-text">
+                <p>Hi! I’m a passionate Data Scientist with a knack for turning raw data into actionable insights. I specialize in machine learning, data visualization, and solving complex problems with a creative twist.</p>
+                <p>When I’m not coding or analyzing datasets, you’ll find me exploring new tech trends or sipping coffee while brainstorming my next big project.</p>
+            </div>
+            <div class="about-image">
+                <img src="https://via.placeholder.com/400x500" alt="Sangit Gaire">
+            </div>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:sangitgaire77@gmail.com">sangitgaire77@gmail.com</a></p>
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fas fa-brain"></i>
+                <h3>Machine Learning</h3>
+                <p>Expertise in supervised and unsupervised learning models.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Data Visualization</h3>
+                <p>Crafting stunning visuals with tools like Tableau and D3.js.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-code"></i>
+                <h3>Programming</h3>
+                <p>Proficient in Python, R, and SQL.</p>
+            </div>
+        </div>
     </section>
+
+    <!-- Projects Section with Hover Effects -->
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="https://via.placeholder.com/600x400" alt="Project 1">
+                <div class="project-info">
+                    <h3>Predictive Analytics Model</h3>
+                    <p>Built a model to predict customer churn with 92% accuracy using Python and Scikit-learn.</p>
+                    <a href="#" class="project-link">View Details</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/600x400" alt="Project 2">
+                <div class="project-info">
+                    <h3>Data Dashboard</h3>
+                    <p>Interactive dashboard for real-time sales insights using Tableau.</p>
+                    <a href="#" class="project-link">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section with Form -->
+    <section id="Contact" class="section contact-section">
+        <h2>Get in Touch</h2>
+        <div class="contact-container">
+            <form class="contact-form">
+                <input type="text" placeholder="Sangit Gaire" required>
+                <input type="email" placeholder="sangitgaire77@gmail.com" required>
+                <textarea placeholder="Hola" required></textarea>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> <a href="mailto:sangitgaire77@gmail.com">sangitgaire77@gmail.com</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> Atlanta, GA, USA</p>
+                <div class="social-links">
+                    <a href="#"><i class="https://www.linkedin.com/in/sangitgaire/"></i></a>
+                    <a href="#"><i class="https://github.com/sang773"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Sangit Gaire. All rights reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
